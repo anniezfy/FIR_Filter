@@ -109,20 +109,20 @@ If a signal is to be represented as a sequence of numbers, it is impossible to m
 
 ## FIRFilter:
 
-A Finite Impulse Response (FIR) filter is a type of a digital filter. The impulse response, the filter's response to a Kronecker delta input, is _finite_ because it settles to zero in a finite number of sample intervals. This is in contrast to Infinite Impulse Response (IIR) filters, which have internal feedback and may continue to respond indefinitely. The impulse response of an
+A Finite Impulse Response (FIR) filter is a type of a digital filter. The impulse response, the filter's response to a Kronecker delta input, is finite because it settles to zero in a finite number of sample intervals. This is in contrast to Infinite Impulse Response (IIR) filters, which have internal feedback and may continue to respond indefinitely. The impulse response of an
+Nth-order FIR filter lasts for N+ 1 sample, and then dies to zero.
+The difference equation that defines the output of an FIR filter in terms of its input is: Y[n] = b0x[n] +b1x [n-1] +b2x [n-2]	+ bn x [n-N]
 
-Nth-orderFIRfilterlastsforN+1sample,andthendiesto zero.
-
-ThedifferenceequationthatdefinestheoutputofanFIRfilterintermsofitsinputis: Y[n] = b0x[n] +b1x [n-1] +b2x [n-2] + bn x [n-N]
 
 where:
 
-- _x_[_n_] istheinput signal,
-- _y_[_n_] istheoutput signal,
-- _bi_arethefiltercoefficients,and
-- _N_isthefilterorder–an_N_th-orderfilterhas(_N_+1)termsontheright-handside; these are commonly referred to as _taps_.
+•	x[n] is the input signal,
+•	y[n] is the output signal,
+•	bi are the filter coefficients, and
+•	N is the filter order – an Nth-order filter has (N + 1) terms on the right-hand side; these are commonly referred to as taps.
 
-This equation can also be expressed as a convolution of the coefficient sequence_bi_withtheinput signal:
+
+This equation can also be expressed as a convolution of the coefficient sequence bi with the input signal: 
 
 ![image](https://user-images.githubusercontent.com/56084662/185579779-650d9273-3bb2-4e39-8cde-f9c54f9efe39.png)
 
@@ -136,7 +136,7 @@ A Finite Impulse Response (FIR) filter is a type of a digital filter. The direct
 
 ##
 
-## DIRECTIMPLEMENTATIONOFFIRFILTER:
+## DIRECT IMPLEMENTATION OF FIR FILTER:
 
 Generally FIR filter is designed using Multiply and Accumulate (MAC) principle where the filter coefficients undergo multiplication and additions. The MAC principle is common in Digital Signal Processing algorithms.
 
