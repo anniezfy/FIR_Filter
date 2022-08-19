@@ -149,17 +149,18 @@ The following expression explains the MAC operation.
 
 Note a few points:
 
-- h=[h0,h1,h2,…,hK-1]isamatrixof― **c**** on ****stant****"**values
-- h=[h0,h1,h2,…,hK-1]isamatrixof― **c**** on ****stant****"**values
+-•	h=[h0,h1, h2,…, hK-1] is a matrix of ―constant” values
+•	h=[h0,h1, h2,…, hK-1] is a matrix of ―constant” values
+
 - Each hk is of M-bits
 - Each hk is of N-bits
 -  
 
 ![image](https://user-images.githubusercontent.com/56084662/185579425-73254d91-486a-412f-91b3-a61c83d2483d.png)
+
 Block diagram of 1-tap FIR filter using direct implemetation.
 
 ![image](https://user-images.githubusercontent.com/56084662/185579567-f38a51d8-2c1b-4dc2-b8a6-a78c7fb16912.png)
-
 
 Block diagram of 4-tap FIR filter using direct implementation.
 
