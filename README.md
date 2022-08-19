@@ -43,13 +43,13 @@ Y[n]=b0x[n]+b1x[n-1]+b2x[n-2] +bnx[n-N]
 
 _N_isthefilterorderan_N_th-orderfilterhas(_N_+1)termsontheright-handside;theseare commonly referred to as _taps_.
 
-Thisequationcanalsobeexpressedasaconvolutionofthecoefficientsequence_bi_withthe input signal
+This equation can also be expressed as a convolution of the coefficient sequence_bi_with  the input signal
 
 ![](RackMultipart20220819-1-39onqk_html_a0c1221e1d840ec4.png)
 
 That is, the filter output is a weighted sum of the current and a finite number of previous values of the input.
 
-# BlockDiagramofFIRfilter:
+# Block Diagram of FIR filter:
 
 ![image](https://user-images.githubusercontent.com/56084662/185578100-4a172a5c-0cb2-4fcb-b0fe-92229793bc83.png)
 
@@ -60,13 +60,12 @@ That is, the filter output is a weighted sum of the current and a finite number 
 
 Thesignal is the onewhich carries information from one sourceto thedestination. There aredifferenttypesofsignals.FilterplaysessentialroleinDigitalSignalProcessing(DSP).Filter is a system that passes certain frequency components and rejects other frequency components.
 
-Filtersaredesignedforthespecificationsofthedesiredpropertiesofthesystem.FPGAisa prototype device which is used to implement simpler algorithms.
+Filters are designed for the specifications of the desired properties of the system.FPGA is a prototype device which is used to implement simpler algorithms.
 
 # Signal:
 
-Inthefieldofcommunications,signalprocessingandinelectricalengineeringmore generally, a signal is any time-varying or spatial-varying quantity.
+In the field of communications,signal processing and in electrical engineering more generally, a signal is any time-varying or spatial-varying quantity.
 
-Inthephysicalworld,anyquantitymeasurablethroughtimeoroverspacecanbetakenasa signal. Within a complex society, anyset of human information or machine data also be taken as asignal.Suchinformationormachinedatamustallbepartsystemsexistinginthephysical world- either living or non-living.
 
 Despite the complexityof such systems, their outputs and inputs can often be represented as simple quantities measurable through time or across space. In the latter half of the 20thcentury Electrical engineering itself separated into several disciplines, specializing in the design and analysis of physical signals and systems, on one hand and in the functional behavior and conceptual structure of the complex human and machine systems, on the other. These engineeringdisciplineshaveledthewayinthedesign,study,andimplementationof systemsthat take advantage of signals as simple measurable quantities in order to facilitate the transmission, storage and manipulation of information.
 
@@ -123,11 +122,11 @@ where:
 - _bi_arethefiltercoefficients,and
 - _N_isthefilterorder–an_N_th-orderfilterhas(_N_+1)termsontheright-handside; these are commonly referred to as _taps_.
 
-Thisequationcanalsobeexpressedasaconvolutionofthecoefficientsequence_bi_withtheinput signal:
+This equation can also be expressed as a convolution of the coefficient sequence_bi_withtheinput signal:
 
-![](RackMultipart20220819-1-39onqk_html_a0c1221e1d840ec4.png)
+![image](https://user-images.githubusercontent.com/56084662/185579779-650d9273-3bb2-4e39-8cde-f9c54f9efe39.png)
 
-Thatis,thefilteroutputisaweightedsumofthecurrentandafinitenumberofprevious values of the input.
+Thatis,the filter output is a weighted sum of the current and a finite number of previous values of the input.
 
 #
 
@@ -141,27 +140,27 @@ A Finite Impulse Response (FIR) filter is a type of a digital filter. The direct
 
 Generally FIR filter is designed using Multiply and Accumulate (MAC) principle where the filter coefficients undergo multiplication and additions. The MAC principle is common in Digital Signal Processing algorithms.
 
-ThefollowingexpressionexplainstheMACoperation.
+The following expression explains the MAC operation.
 
-![](RackMultipart20220819-1-39onqk_html_e0ff3976791924ce.png)
+![image](https://user-images.githubusercontent.com/56084662/185579253-7587c024-faa0-455c-a0dd-abdab2dbc0e2.png)
 
-![](RackMultipart20220819-1-39onqk_html_e0b7aed2e644908b.png)
 
-Noteafewpoints:
+![image](https://user-images.githubusercontent.com/56084662/185579310-7507fbce-e239-4659-9828-ea3764521d29.png)
+
+Note a few points:
 
 - h=[h0,h1,h2,…,hK-1]isamatrixof― **c**** on ****stant****"**values
 - h=[h0,h1,h2,…,hK-1]isamatrixof― **c**** on ****stant****"**values
-- EachhkisofM-bits
-- EachhkisofN-bits
+- Each hk is of M-bits
+- Each hk is of N-bits
 -  
 
+![image](https://user-images.githubusercontent.com/56084662/185579425-73254d91-486a-412f-91b3-a61c83d2483d.png)
+Block diagram of 1-tap FIR filter using direct implemetation.
+
+![image](https://user-images.githubusercontent.com/56084662/185579567-f38a51d8-2c1b-4dc2-b8a6-a78c7fb16912.png)
 
 
-
-
-
-
-
-Blockdiagramof4-tapFIRfilterusingdirectimplementation.
+Block diagram of 4-tap FIR filter using direct implementation.
 
 In direct implementation we follow Multiply and Accumulate (MAC) operation. In this type of operation we directly multiply the coefficient of the filter with the variable and add them to get final result. If we consider 1-tap filter, filter coefficient h0 is directly multiplied with variable x0 and result is assigned to the output. In 4-tap filter filter-coefficient are multipliedwith corresponding variables, the result of four multipliers are added and assigned to the result.
