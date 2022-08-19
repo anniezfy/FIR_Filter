@@ -13,7 +13,7 @@ The output _y_ of a linear time invariant system is determined by [convolving](h
 
 For a [discrete-time](http://en.wikipedia.org/wiki/Discrete-time)FIR filter, the output is a weighted sum of the current and a finite number of previous values of the input. Theoperation is described bythe followingequation, which defines the output sequence _y[n]_ in terms of its input sequence _x[n]_:
 
-![](RackMultipart20220819-1-39onqk_html_ed0f8f04c1caef24.png)
+![image](https://user-images.githubusercontent.com/56084662/185578155-82a98d1f-6d9a-418b-afc0-29ca1c557088.png)
 
 where:
 
@@ -53,9 +53,10 @@ That is, the filter output is a weighted sum of the current and a finite number 
 
 # BlockDiagramofFIRfilter:
 
-![](RackMultipart20220819-1-39onqk_html_2ed5ea2ecddd876f.png)
+![image](https://user-images.githubusercontent.com/56084662/185578100-4a172a5c-0cb2-4fcb-b0fe-92229793bc83.png)
 
-**Fig1.1:** BlockdiagramofFIRfilter
+
+
 
 # DSP INTRODUCTION:
 
@@ -154,15 +155,14 @@ Noteafewpoints:
 - h=[h0,h1,h2,…,hK-1]isamatrixof― **c**** on ****stant****"**values
 - EachhkisofM-bits
 - EachhkisofN-bits
-- ![](RackMultipart20220819-1-39onqk_html_b9cf0632981fec18.png)yshouldbeablelargeenoughtoaccommodatetheresult A numerical example:
+-  
 
-![](RackMultipart20220819-1-39onqk_html_8f8627083d03e7c1.png)
 
-![](RackMultipart20220819-1-39onqk_html_ee536716ea839c37.png)
 
-**Fig**** 3.1.**Blockdiagramof1-tapfilterusingdirectimplementation.
 
-![](RackMultipart20220819-1-39onqk_html_588886b5f512dc30.jpg)
+
+
+
 
 Blockdiagramof4-tapFIRfilterusingdirectimplementation.
 
