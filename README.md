@@ -1,7 +1,5 @@
 # FIR_Filter
-# INTRODUCTION:
-
-# FIR FILTER
+## INTRODUCTION:
 
 In [signal processing,](http://en.wikipedia.org/wiki/Signal_processing) a finite impulse response (FIR) filter is a [filter](http://en.wikipedia.org/wiki/Filter_%28signal_processing%29) whose [impulse](http://en.wikipedia.org/wiki/Impulse_response)[response](http://en.wikipedia.org/wiki/Impulse_response)(or response to any finite length input) is of _finite_ duration, because it settles to zero in finite time. This is in contrast to [infinite impulse response](http://en.wikipedia.org/wiki/Infinite_impulse_response) (IIR) filters, which have internal feedback and may continue to respond indefinitely (usually decaying).
 
@@ -13,7 +11,7 @@ The output _y_ of a linear time invariant system is determined by [convolving](h
 
 For a [discrete-time](http://en.wikipedia.org/wiki/Discrete-time)FIR filter, the output is a weighted sum of the current and a finite number of previous values of the input. Theoperation is described bythe followingequation, which defines the output sequence _y[n]_ in terms of its input sequence _x[n]_:
 
-![image](https://user-images.githubusercontent.com/56084662/185578155-82a98d1f-6d9a-418b-afc0-29ca1c557088.png)
+![image](https://user-images.githubusercontent.com/56084662/185578672-14d9585c-0a50-4a89-8a10-456306fb565b.png)
 
 where:
 
